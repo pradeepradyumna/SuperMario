@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* background-color: #53E0BC;
+    border: 1px solid #3C40C6; */
+    /* background-image: url('https://mcdn.wallpapersafari.com/medium/47/5/ACQuqN.jpg');
+    background-size: fill; */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-image: url('https://mcdn.wallpapersafari.com/medium/47/5/ACQuqN.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#character {
+    width: 100px;
+    height: 100px;
+    /* background-color: #43BE31; */
+    position: relative;
+    top: 350px;
+    /* border: 1px solid #019031; */
+    left: 200px;
+}
+
+#character img {
+    width: 100%;
+    height: 100%;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+#block {
+    width: 100px;
+    height: 80px;
+    /* border: 1px solid #BA2F16;
+    background-color: #FF3E4D; */
+    position: relative;
+    left: 480px;
+    top: 270px;
+    animation: block 2.5s infinite linear;
+}
+
+#block img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes block {
+    0% {
+        left: 1000px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 200px;
+    }
+    30% {
+        top: 60px;
+    }
+    70% {
+        top: 50px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+#instruction {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+#score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    color: white;
+    font-size: 30px;
+}

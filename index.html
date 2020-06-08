@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="jump()">
+    <div id="main">
+
+
+        <div id="game">
+
+            <div id="character">
+                <img src="https://i0.wp.com/neostuffs.com/wp-content/uploads/2018/03/mario.png">
+            </div>
+            <div id="block">
+                <img src="https://www.pinclipart.com/picdir/big/213-2136015_tail-goombas-artwork-from-super-mario-3d-land.png" alt="">
+            </div>
+            <div id="instruction">Click to Jump</div>
+            <div id="score"></div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js">
+    (function() {
+
+        var img = document.getElementById('character').firstChild;
+        img.onload = function() {
+            if (img.height > img.width) {
+                img.height = '100%';
+                img.width = 'auto';
+            }
+        };
+
+        var img = document.getElementById('block').firstChild;
+        img.onload = function() {
+            if (img.height > img.width) {
+                img.height = '100%';
+                img.width = 'auto';
+            }
+        };
+
+    }());
+</script>
+
+</html>
