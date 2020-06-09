@@ -67,6 +67,9 @@ var checkDead = setInterval(function() {
         score.innerText = "Your highest score was " + scoreIncrementer;
         block.style.animation = "none";
         block.style.display = "none";
+        character.style.animation = "none";
+        character.style.display = "none";
+
         setTimeout(function() { instruction.innerHTML = "Refresh to start again"; }, 1000);
     }
 
